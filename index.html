@@ -15,11 +15,23 @@
     <style>
 
         @media screen and (max-width: 1023px){
-  #container {
-    width: 100%;
-    src: "https://docs.google.com/document/d/e/2PACX-1vTcGwiMdLavi72QQaanj7Iv862o3mJc-9IgkUZPuZzFWft5yc7sx9X8qg1Qi6a-FXAb2jAjLcHLUdks/pub?embedded=true";
+
+.desktop {
+  display:none;
 }
+
+.mobile {
+  width: 100%;
+}
+        }
+        @media(min-width: 1024px){
+
+.mobile {
+  display:none;
+}
+
   }
+
     </style>
 
   </head> 
@@ -34,8 +46,10 @@
     });
     </script>
     <div style="display: flex; justify-content: center; margin-top: 2em; overflow: hidden;" >
-    <iframe class="container" style="font-size: 1.125rem; text-align: center; border-width: 0px; border-style: none;" width="620em" max-width="calc(100% - 10em)" height="9500em" src="https://docs.google.com/document/d/e/2PACX-1vSIHiymwY46WSQkQrqYhtFmBEjdPh53yfChilS3tfLRwaWRaajRYKyP8cVr2g5Lxaw16YTTprTSJdCk/pub?embedded=true"></iframe>
-    </div>
+    <iframe class="desktop" style="font-size: 1.125rem; text-align: center; border-width: 0px; border-style: none;" width="620em" max-width="calc(100% - 10em)" height="9500em" src="https://docs.google.com/document/d/e/2PACX-1vSIHiymwY46WSQkQrqYhtFmBEjdPh53yfChilS3tfLRwaWRaajRYKyP8cVr2g5Lxaw16YTTprTSJdCk/pub?embedded=true"></iframe>
+    <iframe class="mobile" style="font-size: 1.125rem; text-align: center; border-width: 0px; border-style: none;" width="620em" max-width="calc(100% - 10em)" height="9500em" src="https://docs.google.com/document/d/e/2PACX-1vTcGwiMdLavi72QQaanj7Iv862o3mJc-9IgkUZPuZzFWft5yc7sx9X8qg1Qi6a-FXAb2jAjLcHLUdks/pub?embedded=true"></iframe>
+
+  </div>
 
   </body>
 </html>
